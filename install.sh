@@ -125,4 +125,9 @@ ssh-keygen -t rsa -b 4096 -C "$EMAIL_PERSONAL" -f "id_rsa_github_personal"
 ssh-keygen -t rsa -b 4096 -C "$EMAIL_COMPANY" -f "id_rsa_github_company"
 echo "SSH keys are generated in $HOME/.ssh/"
 echo "Add SSH keys to GitHub"
-open "https://github.com/settings/keys" -a "Google Chrome" --args --make-default-browser
+
+# Alacritty settings
+ALACRITTY_CONFIG_DIR="$HOME/.config/alacritty"
+mkdir -p "$ALACRITTY_CONFIG_DIR"
+# Download alacritty config file to configuration directory
+curl https://raw.githubusercontent.com/cheonjaewoong/dotfiles/HEAD/alacritty.yml --output "$ALACRITTY_CONFIG_DIR/alacritty.yml"
