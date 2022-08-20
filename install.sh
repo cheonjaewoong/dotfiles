@@ -111,7 +111,6 @@ curl -L https://get.oh-my.fish | fish
 
 # Set fish theme to default
 omf theme default
-fish
 
 # Git settings
 git config --global user.name "Jaewoong Cheon"
