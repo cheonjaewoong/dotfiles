@@ -97,7 +97,7 @@ for APP in "${APPS[@]}"; do
 done
 
 # Install fish shell
-if is_not_exist; then
+if is_not_exist "fish"; then
     echo "Install fish shell"
     brew install fish
 fi
