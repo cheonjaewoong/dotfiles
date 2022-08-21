@@ -31,6 +31,7 @@ fi
 # Install tools
 TOOLS=(
     vim
+    tmux # Terminal multiplexer
     tree
     git
     gh # GitHub command line tool
